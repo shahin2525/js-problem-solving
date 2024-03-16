@@ -13,4 +13,17 @@ const milesToKm = (miles) => {
 
 const myMilesDistance = 2;
 const myKmDistance = milesToKm(myMilesDistance);
-console.log(myKmDistance);
+// console.log(myKmDistance);
+
+const peterNumberIsEven = (number) => {
+  const even = number % 2;
+  if (even === 0) {
+    return true;
+  } else {
+    return false;
+  }
+};
+const petersNumber1 = 98;
+const petersNumber2 = 117;
+const petersNumber = peterNumberIsEven(petersNumber2);
+console.log(petersNumber);
