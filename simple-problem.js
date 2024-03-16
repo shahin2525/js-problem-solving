@@ -40,3 +40,17 @@ const isLeapYear = (year) => {
 const year = 2025;
 const leapYear = isLeapYear(year);
 // console.log(leapYear);
+
+// calculate sum of all number of array
+
+const sumNumberOfArray = (numbers) => {
+  let sum = 0;
+
+  for (let i = 0; i < numbers.length; i++) {
+    const element = numbers[i];
+    sum += element;
+  }
+  return sum;
+};
+const numbers = [10, 15, 20, 25];
+const TotalArrayNumber = sumNumberOfArray(numbers);
