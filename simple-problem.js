@@ -52,5 +52,7 @@ const sumNumberOfArray = (numbers) => {
   }
   return sum;
 };
-const numbers = [10, 15, 20, 25];
-const TotalArrayNumber = sumNumberOfArray(numbers);
+const numbers = [10, 15, 20, 25, 60];
+const totalArrayNumber = sumNumberOfArray(numbers);
+
+// console.log(totalArrayNumber);
