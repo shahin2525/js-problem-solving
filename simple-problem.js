@@ -74,19 +74,37 @@ const totalArrayNumber = sumNumberOfArray(numbers);
 
 const getEvenNumbersOfAnArray = (numbers) => {
   let evenNumbers = [];
+  let sum = 0;
   for (let i = 0; i < numbers.length; i++) {
     const index = i;
 
     const element = numbers[index];
 
-    if (element % 2 === 0) {
+    if (element % 2 !== 0) {
       evenNumbers.push(element);
     }
   }
+  // for (let i = 0; i < evenNumbers.length; i++) {
+  //   const element = evenNumbers[i];
+  //   sum += element;
+  // }
   return evenNumbers;
 };
 
 const numbers2 = [10, 11, 12, 13, 14];
 // const oddNumber = getOddNumbersOfAnArray(numbers2);
 const evenNumbers = getEvenNumbersOfAnArray(numbers2);
-console.log(evenNumbers);
+const totalSum = sumNumberOfArray(evenNumbers);
+// console.log(totalSum);
+
+const factorial = (number) => {
+  let result = 1;
+  for (let i = number; i >= number; i++) {
+    result = result * i;
+  }
+  return result;
+};
+
+const number = 4;
+const factorialNumber = factorial(number);
+console.log(factorialNumber);
