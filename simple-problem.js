@@ -56,3 +56,37 @@ const numbers = [10, 15, 20, 25, 60];
 const totalArrayNumber = sumNumberOfArray(numbers);
 
 // console.log(totalArrayNumber);
+
+// const getOddNumbersOfAnArray = (numbers) => {
+//   let oddNumbers = [];
+//   for (i = 1; i < numbers.length; i++) {
+//     const element = numbers[i];
+//     if (element % 2 !== 0) {
+//       oddNumbers.push(element);
+//     }
+//   }
+//   // console.log(oddNumbers);
+//   return oddNumbers;
+
+//   // const odd = number % 2 != 0;
+//   // return odd;
+// };
+
+const getEvenNumbersOfAnArray = (numbers) => {
+  let evenNumbers = [];
+  for (let i = 0; i < numbers.length; i++) {
+    const index = i;
+
+    const element = numbers[index];
+
+    if (element % 2 === 0) {
+      evenNumbers.push(element);
+    }
+  }
+  return evenNumbers;
+};
+
+const numbers2 = [10, 11, 12, 13, 14];
+// const oddNumber = getOddNumbersOfAnArray(numbers2);
+const evenNumbers = getEvenNumbersOfAnArray(numbers2);
+console.log(evenNumbers);
