@@ -97,14 +97,67 @@ const evenNumbers = getEvenNumbersOfAnArray(numbers2);
 const totalSum = sumNumberOfArray(evenNumbers);
 // console.log(totalSum);
 
+// const factorial = (number) => {
+//   let result = 1;
+//   for (let i = number; i >= number; i++) {
+//     result = result * i;
+//   }
+//   return result;
+// };
+
+// const number = 4;
+// const factorialNumber = factorial(number);
+// console.log(factorialNumber);
+
+// const factorial = (number) => {
+//   for (let i = 1; i <= number; i++) {
+//     console.log(i);
+//   }
+// };
+
+// const factNumber = 3;
+// const fact = factorial(factNumber);
+// console.log(fact);
+
+// const numberFacto = 3;
+// const getFactorial = factorial(numberFacto);
+// console.log(getFactorial);
+
+// const factorial2 = (number) => {
+//   for (let i = number; i >= 1; i--) {
+//     console.log(i);
+//   }
+// };
+// const factNumber = 5;
+// const fact = factorial2(factNumber);
+// console.log(fact);
+
+// const factorial = (number) => {
+//   let num = 1;
+//   let result = 1;
+//   while (num <= number) {
+//     result = num * result;
+//     num++;
+//   }
+
+//   return result;
+// };
+
+// const factNumber = 3;
+// const fact = factorial(factNumber);
+// console.log(fact);
+
 const factorial = (number) => {
+  let i = number;
   let result = 1;
-  for (let i = number; i >= number; i++) {
+  while (i >= 1) {
+    console.log(i);
     result = result * i;
+    i--;
   }
   return result;
 };
 
-const number = 4;
-const factorialNumber = factorial(number);
-console.log(factorialNumber);
+const factNumber = 5;
+const fact = factorial(factNumber);
+console.log(fact);
