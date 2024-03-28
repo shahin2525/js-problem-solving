@@ -8,9 +8,13 @@ const num6 = 2.5;
 const gap = Math.abs(num1 - num2);
 const round = Math.ceil(num3);
 const floor = Math.floor(num4);
-console.log(floor);
-if (gap < 5) {
-  console.log("i will marry you");
-} else {
-  console.log("i will marry you");
+// console.log(floor);
+// if (gap < 5) {
+//   console.log("i will marry you");
+// } else {
+//   console.log("i will marry you");
+// }
+for (let i = 0; i < 10; i++; ) {
+  const random = Math.round(Math.random() * 6);
+  console.log(random);
 }
