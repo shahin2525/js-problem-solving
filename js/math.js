@@ -14,7 +14,6 @@ const floor = Math.floor(num4);
 // } else {
 //   console.log("i will marry you");
 // }
-for (let i = 0; i < 10; i++; ) {
+for (let i = 0; i < 10; i++) {
   const random = Math.round(Math.random() * 6);
-  console.log(random);
 }
