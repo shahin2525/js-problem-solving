@@ -42,9 +42,23 @@ const myObj = { name: "rakib", age: 20, profession: "student" };
 // for (let key in myObj) {
 //   console.log(`keys:${key} values:${myObj[key]}`);
 // }
-const keys = Object.keys(myObj);
-keys.forEach((key) => {
-  console.log(`keys:${key} values:${myObj[key]}`);
-});
+// const keys = Object.keys(myObj);
+// keys.forEach((key) => {
+//   console.log(`keys:${key} values:${myObj[key]}`);
+// });
 
 // console.log(keys);
+
+function getUpperEighty(numbers) {
+  let upper = [];
+  for (let i = 0; i < numbers.length; i++) {
+    const result = numbers[i];
+    if (result > 80) {
+      upper.push(result);
+    }
+  }
+  return upper;
+}
+const numbers = [10, 708, 102, 55, 70, 505];
+const upperEighty = getUpperEighty(numbers);
+console.log(upperEighty);
