@@ -17,7 +17,34 @@ arr2 = [10, 20, 30, 40, 44];
 //   console.log(age);
 // }
 
-for (let i = 0; i < arr2.length; i++) {
-  const age = arr2[i];
-  console.log(age);
-}
+// for (let i = 0; i < arr2.length; i++) {
+//   const age = arr2[i];
+//   console.log(age);
+// }
+
+// const getMuiltiply = (num1, num2, num3) => {
+//   const result = num1 * num2 * num3;
+//   return result;
+// };
+// const num1 = 5;
+// const num2 = 5;
+// const num3 = 5;
+// const multiplay = getMuiltiply(num1, num2, num3);
+// console.log(multiplay);
+
+const myObj = { name: "rakib", age: 20, profession: "student" };
+// for (let key in myObj) {
+//   console.log(key);
+// }
+// const keys = Object.entries(myObj);
+// console.log(keys);
+
+// for (let key in myObj) {
+//   console.log(`keys:${key} values:${myObj[key]}`);
+// }
+const keys = Object.keys(myObj);
+keys.forEach((key) => {
+  console.log(`keys:${key} values:${myObj[key]}`);
+});
+
+// console.log(keys);
