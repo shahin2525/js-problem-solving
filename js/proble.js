@@ -23,22 +23,22 @@
 // const book3 = 300;
 // const totalPage = paperRequirement(book1, book2, book3);
 // console.log(totalPage);
-const bestFriend = (friends) => {
-  let friendsArray = friends[0].split(",");
-  let bestFriend = friendsArray[0];
-  console.log(bestFriend, "one");
-  for (let i = 0; i < friendsArray.length; i++) {
-    const friend = friendsArray[i];
-    console.log(friend, "two");
-    if (friend.length > bestFriend.length) {
-      bestFriend = friend;
-    }
-  }
-  return bestFriend;
-};
-const friends = ["rakib,tom,nila,moumita"];
-const getBestFried = bestFriend(friends);
-console.log(getBestFried, "three");
+// const bestFriend = (friends) => {
+//   let friendsArray = friends[0].split(",");
+//   let bestFriend = friendsArray[0];
+//   console.log(bestFriend, "one");
+//   for (let i = 0; i < friendsArray.length; i++) {
+//     const friend = friendsArray[i];
+//     console.log(friend, "two");
+//     if (friend.length > bestFriend.length) {
+//       bestFriend = friend;
+//     }
+//   }
+//   return bestFriend;
+// };
+// const friends = ["rakib,tom,nila,moumita"];
+// const getBestFried = bestFriend(friends);
+// console.log(getBestFried, "three");
 // function findLongestName(names) {
 //   let longestName = names[0]; // Assume the first name is the longest
 //   for (let i = 1; i < names.length; i++) {
@@ -53,3 +53,18 @@ console.log(getBestFried, "three");
 // const namesArray = ["John", "Alice", "Michael", "Elizabeth"];
 // const longestName = findLongestName(namesArray);
 // console.log("Longest name:", longestName);
+const getPositiveNumber = (numbers) => {
+  let positives = [];
+  for (let i = 0; i < numbers.length; i++) {
+    const number = numbers[i];
+    if (number > 0) {
+      positives.push(number);
+    } else {
+      break;
+    }
+  }
+  return positives;
+};
+const numbers = [10, 0.5, -2, 3, -4, 7];
+const positiveNumber = getPositiveNumber(numbers);
+console.log(positiveNumber);
