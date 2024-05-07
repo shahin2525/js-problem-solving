@@ -16,10 +16,25 @@
 // console.log(partial2);
 // console.log(friends);
 
-const numbers = [10, 20, 30, 10, 20, 30, 2, 3];
+// const numbers = [10, 20, 30, 10, 20, 30, 2, 3];
 
-const checkDuplicate = (numbers) => {
-  let unique = [];
+// const checkDuplicate = (numbers) => {
+//   let unique = [];
+//   for (let i = 0; i < numbers.length; i++) {
+//     const number = numbers[i];
+//     if (unique.includes(number) === false) {
+//       unique.push(number);
+//     }
+//   }
+//   return unique;
+// };
+
+// const duplicate = checkDuplicate(numbers);
+// console.log(duplicate);
+
+const numbers = [10, 20, 30, 10, 20, 30, 3, 40, 5];
+const getDuplicate = (numbers) => {
+  const unique = [];
   for (let i = 0; i < numbers.length; i++) {
     const number = numbers[i];
     if (unique.includes(number) === false) {
@@ -29,5 +44,5 @@ const checkDuplicate = (numbers) => {
   return unique;
 };
 
-const duplicate = checkDuplicate(numbers);
-console.log(duplicate);
+const getUnique = getDuplicate(numbers);
+console.log(getUnique);
