@@ -32,17 +32,30 @@
 // const duplicate = checkDuplicate(numbers);
 // console.log(duplicate);
 
-const numbers = [10, 20, 30, 10, 20, 30, 3, 40, 5];
-const getDuplicate = (numbers) => {
-  const unique = [];
-  for (let i = 0; i < numbers.length; i++) {
-    const number = numbers[i];
-    if (unique.includes(number) === false) {
-      unique.push(number);
-    }
-  }
-  return unique;
-};
+// const numbers = [10, 20, 30, 10, 20, 30, 3, 40, 5];
+// const getDuplicate = (numbers) => {
+//   const unique = [];
+//   for (let i = 0; i < numbers.length; i++) {
+//     const number = numbers[i];
+//     if (unique.includes(number) === false) {
+//       unique.push(number);
+//     }
+//   }
+//   return unique;
+// };
 
-const getUnique = getDuplicate(numbers);
-console.log(getUnique);
+// const getUnique = getDuplicate(numbers);
+// console.log(getUnique);
+for (let i = 0; i <= 20; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("foobar");
+  } else if (i % 3 != 0 && i % 5 != 0) {
+    console.log("foobarShow");
+  } else if (i % 3 === 0) {
+    console.log("foo");
+  } else if (i % 5 === 0) {
+    console.log("bar");
+  } else {
+    console.log(i);
+  }
+}
