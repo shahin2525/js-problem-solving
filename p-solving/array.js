@@ -46,16 +46,26 @@
 
 // const getUnique = getDuplicate(numbers);
 // console.log(getUnique);
-for (let i = 0; i <= 20; i++) {
-  if (i % 3 === 0 && i % 5 === 0) {
-    console.log("foobar");
-  } else if (i % 3 != 0 && i % 5 != 0) {
-    console.log("foobarShow");
-  } else if (i % 3 === 0) {
-    console.log("foo");
-  } else if (i % 5 === 0) {
-    console.log("bar");
-  } else {
-    console.log(i);
+// for (let i = 0; i <= 20; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log("foobar");
+//   } else if (i % 3 != 0 && i % 5 != 0) {
+//     console.log("foobarShow");
+//   } else if (i % 3 === 0) {
+//     console.log("foo");
+//   } else if (i % 5 === 0) {
+//     console.log("bar");
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+const getTotal = (num1, num2) => {
+  if (typeof num1 !== "number" || typeof num2 !== "number") {
+    return "please provide number";
   }
-}
+  return num1 + num2;
+};
+
+const total = getTotal(8, 10);
+console.log(total);
