@@ -55,24 +55,45 @@
 // const getSortMaker = sortMaker(arr);
 // console.log(getSortMaker);
 
-const findAddress = (obj) => {
-  const aspectedProperty = ["street", "house", "society"];
+// const findAddress = (obj) => {
+//   const aspectedProperty = ["street", "house", "society"];
 
-  let objValues = [];
-  for (let i = 0; i < aspectedProperty.length; i++) {
-    const prop = aspectedProperty[i];
-    if (obj.hasOwnProperty(prop)) {
-      objValues.push(obj[prop]);
-    } else {
-      objValues.push("--");
-    }
+//   let objValues = [];
+//   for (let i = 0; i < aspectedProperty.length; i++) {
+//     const prop = aspectedProperty[i];
+//     if (obj.hasOwnProperty(prop)) {
+//       objValues.push(obj[prop]);
+//     } else {
+//       objValues.push("--");
+//     }
+//   }
+//   return objValues.join(", ");
+// };
+// const myAddress = {
+//   street: 10,
+//   house: "15A",
+//   society: "Earth Perfect",
+// };
+// const getAddress = findAddress(myAddress);
+// console.log(getAddress);
+
+const canPay = (changesMoney, chipsPrice) => {
+  if (changesMoney.length === 0) {
+    return "please provide numbers in array";
   }
-  return objValues.join(", ");
+  let myMoney = 0;
+  for (let i = 0; i < changesMoney.length; i++) {
+    let money = changesMoney[i];
+    myMoney = myMoney + money;
+  }
+  if (myMoney > chipsPrice) {
+    return true;
+  } else {
+    return false;
+  }
 };
-const myAddress = {
-  street: 10,
-  house: "15A",
-  society: "Earth Perfect",
-};
-const getAddress = findAddress(myAddress);
-console.log(getAddress);
+
+const changesMony = [2, 3, 8];
+const chipsPrice = 10;
+const getChips = canPay(changesMony, chipsPrice);
+console.log(getChips);
